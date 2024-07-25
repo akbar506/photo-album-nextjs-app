@@ -42,6 +42,7 @@ export default async function ShowImage() {
         <div className="flex gap-5 flex-wrap">
           {/* Use Suspense for while fetching images */}
           <Suspense fallback={<ImageSkeleton />}>
+            {/* eslint-disable-next-line react/jsx-key */}
             <ImageResults />
           </Suspense>
         </div>
