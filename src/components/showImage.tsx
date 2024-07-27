@@ -57,7 +57,7 @@ function ImageResults() {
   const results = React.use(getCloudinaryResults());
 
   return (
-    <main>
+    <main className="w-full">
       <Revalidate path="/gallery" />
       {results.length > 0 ? (
         <div className="flex gap-5 flex-wrap">
@@ -112,8 +112,8 @@ function ImageResults() {
         </div>
       ) : (
         <>
-          <div className="flex justify-center min-w-full h-72 items-center  border-2">
-            <p className="text-3xl font-bold w-">No Images to Show</p>
+          <div className="flex justify-center min-w-full h-72 items-center">
+            <p className="text-3xl font-bold">No Images to Show</p>
           </div>
         </>
       )}
