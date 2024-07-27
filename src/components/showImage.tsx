@@ -26,7 +26,7 @@ async function getCloudinaryResults() {
   // Use Cloudinary Package to get images "public_id" and store in a array
   const results = (await cloudinary.v2.search
     .expression("resource_type:image")
-    .sort_by("public_id", "asc")
+    .sort_by("created_at", "asc")
     // .max_results(5)
     .execute()) as { resources: SearchResult[] };
 
