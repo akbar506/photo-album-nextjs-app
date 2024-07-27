@@ -84,7 +84,7 @@ function ImageResults() {
                     <DropdownMenuGroup>
                       <DropdownMenuItem>
                         <Button variant={"ghost"} size={"sm"} className="p-0">
-                          <span>Edit</span>
+                          <span>Edit (unavailable)</span>
                         </Button>
                       </DropdownMenuItem>
                       <DropdownMenuSeparator />
