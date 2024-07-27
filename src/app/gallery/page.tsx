@@ -12,18 +12,18 @@ export default function Gallery() {
           <Alert>
             <AlertTitle>NOTE!</AlertTitle>
             <AlertDescription>
-              Once you upload an Image, There is no option at that time to
-              delete that image means it cannot be deleted and also it will
-              avaiable to everyone who visits this website.
+              Once you upload an Image, It will avaiable to everyone who visits
+              this website. If the changes does not reflect then click on the
+              "Refresh" button
             </AlertDescription>
           </Alert>
         </div>
 
         <div className="flex justify-between items-center p-5 w-full">
           <div>
-            <h2 className="text-xl font-bold">Gallery</h2>
+            <h2 className="text-5xl font-bold">Gallery</h2>
           </div>
-          <div className="flex gap-x-5">
+          <div className="flex items-center gap-x-5">
             <div>
               <Refresh />
             </div>

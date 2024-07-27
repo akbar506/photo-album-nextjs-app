@@ -3,6 +3,7 @@ import { ThemeProvider } from "@/components/theme-provider";
 import Sidebar from "@/components/sidebar";
 import Navbar from "@/components/navbar";
 import { Inter } from "next/font/google";
+import { Toaster } from "@/components/ui/toaster";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -30,6 +31,7 @@ export default function RootLayout({
           <div className="flex w-full">
             <Sidebar />
             {children}
+            <Toaster />
           </div>
         </ThemeProvider>
       </body>
