@@ -5,13 +5,11 @@ type CloudinaryImage = {
   width: number;
   height: number;
   src: string;
-  url: string;
   // public_id: string;
 };
 
 export default function CloudinaryImage({
   // public_id,
-  url,
   width,
   height,
   src,
@@ -21,14 +19,13 @@ export default function CloudinaryImage({
     <>
       <div className="max-w-80 relative">
         <CldImage
-          key={src}
           width={width}
           height={height}
           src={src}
           {...props}
           sizes="100vw"
           alt="Image"
-          className="hover:brightness-50 cursor-pointer relative"
+          className="hover:brightness-50 cursor-pointer relative w-full h-full object-cover"
         />
         <span className="absolute left-3 top-3">
           <svg
